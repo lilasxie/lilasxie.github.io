@@ -17,7 +17,7 @@ languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "睿可同学"
 theme = "tranquilpeak"
-disqusShortname = "tranquilpeak"
+# disqusShortname = "tranquilpeak"
 # googleAnalytics = "UA-123-45"
 paginate = 7
 canonifyurls = true
@@ -176,7 +176,14 @@ publishDir = "../docs"
   # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
   # they have to be referred from static root. Example
   [[params.customJS]]
-  src = "js/cnzz.js"
+    src = "js/cnzz.js"
+  [[params.customJS]]
+    src = "js/share.js"
+  [[params.customJS]]
+    src = "https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"
+    crossorigin = "anonymous"
+    async = true
+    defer = true
 
   # Sharing options
   # Comment and uncomment to enable or disable sharing options
@@ -192,10 +199,20 @@ publishDir = "../docs"
   #   icon = "fa-twitter"
   #   url = "https://twitter.com/intent/tweet?text=%s"
 
-  # [[params.sharingOptions]]
-  #   name = "Google+"
-  #   icon = "fa-google-plus"
-  #   url = "https://plus.google.com/share?url=%s"
+  [[params.sharingOptions]]
+    name = "微博"
+    icon = "fa-weibo"
+    url = "http://v.t.sina.com.cn/share/share.php?url=%s"
+
+  [[params.sharingOptions]]
+    name = "QQ"
+    icon = "fa-qq"
+    url = "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=%s"
+
+  [[params.sharingOptions]]
+    name = "微信"
+    icon = "fa-weixin"
+    url = "http://chart.apis.google.com/chart?cht=qr&chs=104x104&chld=L|0&chl=%s"
 
   [params.header.rightLink]
     class = ""
