@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 睿可同学</title>
+    <link>https://blog.rico.plus/categories/</link>
+    <description>Recent content in Categories on 睿可同学</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.rico.plus/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>写作训练营</title>
+      <link>https://blog.rico.plus/categories/%E5%86%99%E4%BD%9C%E8%AE%AD%E7%BB%83%E8%90%A5/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rico.plus/categories/%E5%86%99%E4%BD%9C%E8%AE%AD%E7%BB%83%E8%90%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>box定投践行群</title>
+      <link>https://blog.rico.plus/categories/box%E5%AE%9A%E6%8A%95%E8%B7%B5%E8%A1%8C%E7%BE%A4/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rico.plus/categories/box%E5%AE%9A%E6%8A%95%E8%B7%B5%E8%A1%8C%E7%BE%A4/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
