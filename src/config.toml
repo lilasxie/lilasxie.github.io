@@ -21,6 +21,7 @@ disqusShortname = "tranquilpeak"
 # googleAnalytics = "UA-123-45"
 paginate = 7
 canonifyurls = true
+publishDir = "../docs"
 
 [permalinks]
   post = "/:year/:month/:slug/"
@@ -174,8 +175,8 @@ canonifyurls = true
 
   # Custom JS. Put here your custom JS files. They are loaded after the theme JS;
   # they have to be referred from static root. Example
-  # [[params.customJS]]
-  #   src = "js/myscript.js"
+  [[params.customJS]]
+  src = "js/cnzz.js"
 
   # Sharing options
   # Comment and uncomment to enable or disable sharing options
