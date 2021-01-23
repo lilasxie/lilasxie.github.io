@@ -83,7 +83,7 @@ publishDir = "../docs"
   weight = 2
   identifier = "weibo"
   name = "微博"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-stack-overflow\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-weibo\"></i>"
   url = "https://weibo.com/u/5871877638"
 
 [[menu.misc]]
