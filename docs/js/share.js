@@ -1,6 +1,11 @@
 var pageUrl = window.location.href;
 var pageTitle = document.title;
-var pageImg = $(".post-header-cover").css("backgroundImage").replace('url(','').replace(')','');;
+// 非文章页面返回
+if($(".post-header-cover").length == 0){
+    return;
+}
+
+var pageImg = $(".post-header-cover").css("backgroundImage").replace('url(','').replace(')','');
 
 // 微博初始化
 let shareSina = 'http://service.weibo.com/share/share.php?title=' + encodeURIComponent(pageTitle) + '&url=' + encodeURIComponent(pageUrl) + '&pic=' + encodeURIComponent(pageImg);
