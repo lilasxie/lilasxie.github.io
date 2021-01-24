@@ -1,19 +1,21 @@
-var pageUrl = window.location.href;
-var pageTitle = document.title;
-// 非文章页面返回
-if($(".post-header-cover").length == 0){
-    return;
-}
+(function(){
+    var pageUrl = window.location.href;
+    var pageTitle = document.title;
+    // 非文章页面返回
+    if($(".post-header-cover").length == 0){
+        return;
+    }
 
-var pageImg = $(".post-header-cover").css("backgroundImage").replace('url(','').replace(')','');
+    var pageImg = $(".post-header-cover").css("backgroundImage").replace('url(','').replace(')','');
 
-// 微博初始化
-let shareSina = 'http://service.weibo.com/share/share.php?title=' + encodeURIComponent(pageTitle) + '&url=' + encodeURIComponent(pageUrl) + '&pic=' + encodeURIComponent(pageImg);
-$('.post-action-share .fa-weibo').parent().attr("href", shareSina);
+    // 微博初始化
+    let shareSina = 'http://service.weibo.com/share/share.php?title=' + encodeURIComponent(pageTitle) + '&url=' + encodeURIComponent(pageUrl) + '&pic=' + encodeURIComponent(pageImg);
+    $('.post-action-share .fa-weibo').parent().attr("href", shareSina);
 
-// QQ空间初始化
-let shareQQZone = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=' + encodeURIComponent(pageTitle) + '&title=' + encodeURIComponent(pageTitle) + '&url=' + encodeURIComponent(pageUrl) + '&pics=' + encodeURIComponent(pageImg);
-$('.post-action-share .fa-qq').parent().attr("href", shareQQZone);
+    // QQ空间初始化
+    let shareQQZone = 'http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=' + encodeURIComponent(pageTitle) + '&title=' + encodeURIComponent(pageTitle) + '&url=' + encodeURIComponent(pageUrl) + '&pics=' + encodeURIComponent(pageImg);
+    $('.post-action-share .fa-qq').parent().attr("href", shareQQZone);
+})();
 
 // 微信初始化
 /*$(".fa-weixin").click(function() {
