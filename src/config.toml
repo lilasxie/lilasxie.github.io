@@ -178,6 +178,8 @@ publishDir = "../docs"
   [[params.customJS]]
     src = "js/cnzz.js"
   [[params.customJS]]
+    src = "js/baidu_tongji.js"
+  [[params.customJS]]
     src = "js/share.js"
   [[params.customJS]]
     src = "https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"
